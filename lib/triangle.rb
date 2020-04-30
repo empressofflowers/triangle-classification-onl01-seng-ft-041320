@@ -13,8 +13,9 @@ class Triangle
 #The sum of the length of two sides of a triangle must be greater than the third.
     if a <= 0 || b <= 0 || c <= 0 ||
       a + b <= c || b + c <= a || a + c <= b
-       begin
+      begin
         raise TriangleError
+      rescue TriangleError
     else a == b && b == c
       :equilateral
     else a == b || c == b || a == c
