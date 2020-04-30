@@ -15,7 +15,8 @@ class Triangle
       a + b <= c || b + c <= a || a + c <= b
       begin
         raise TriangleError
-      rescue TriangleError
+      rescue TriangleError => error
+          puts error.message
     else a == b && b == c
       :equilateral
     else a == b || c == b || a == c
