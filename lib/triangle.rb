@@ -12,11 +12,11 @@ class Triangle
   def kind
     if a = b && c => 0
       :isosceles
-    
+
   end
 
   class TriangleError < StandardError
-    
+
   end
 
 end
