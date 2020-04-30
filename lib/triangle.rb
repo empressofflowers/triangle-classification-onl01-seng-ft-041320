@@ -21,7 +21,7 @@ class Triangle
       :equilateral
     else a == b || c == b || a == c
       :isosceles
-    elsif a != b && c =! b && a =! c
+    else a != b && c =! b && a =! c
       :scalene
     end
   end
