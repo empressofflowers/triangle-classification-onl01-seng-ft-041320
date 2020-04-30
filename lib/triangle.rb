@@ -10,8 +10,14 @@ class Triangle
   end
 
   def kind
-    if a = b && c => 0
+    if a == b && b == c
+      :equilateral
+    else a == b || c == b || a == c
       :isosceles
+    elsif a != b && c =! b && a =! c
+      :scalene
+
+
 
   end
 
