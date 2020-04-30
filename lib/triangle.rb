@@ -10,6 +10,8 @@ class Triangle
   end
 
   def kind
+#The some of the length of two sides of a triangle must be greater than the third.
+    
     if a == b && b == c
       :equilateral
     else a == b || c == b || a == c
