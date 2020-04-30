@@ -13,6 +13,7 @@ class Triangle
 #The sum of the length of two sides of a triangle must be greater than the third.
     if a <= 0 || b <= 0 || c <= 0 ||
       a + b <= c || b + c <= a || a + c <= b
+       begin
         raise TriangleError
     else a == b && b == c
       :equilateral
@@ -28,7 +29,7 @@ class Triangle
 
   class TriangleError < StandardError
     def message
-      "The sum of the length of two sides of a triangle must be greater than the third."
+      "The sum of the length of any two sides of a triangle must be greater than the third."
     end
   end
 
