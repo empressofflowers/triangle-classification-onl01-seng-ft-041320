@@ -10,20 +10,20 @@ class Triangle
   end
 
   def kind
-#    if a <= 0 || b <= 0 || c <= 0 ||
-#      a + b <= c || b + c <= a || a + c <= b
+    if a <= 0 || b <= 0 || c <= 0 ||
+      a + b <= c || b + c <= a || a + c <= b
       begin
         raise TriangleError
       rescue TriangleError => error
           puts error.message
       end
-#    elsif a == b && b == c
-#      :equilateral
-#    elsif a == b || c == b || a == c
-#      :isosceles
-#    else a != b && c =! b && a =! c
-#      :scalene
-#    end
+    elsif a == b && b == c
+      :equilateral
+    elsif a == b || c == b || a == c
+      :isosceles
+    else a != b && c =! b && a =! c
+      :scalene
+    end
   end
 
   class TriangleError < StandardError
@@ -33,4 +33,4 @@ class Triangle
   end
 end
 
-Triangle.new.kind
+Triangle.new(4, 4, 4)
