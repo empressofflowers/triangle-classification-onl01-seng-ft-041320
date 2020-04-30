@@ -10,8 +10,8 @@ class Triangle
   end
 
   def kind
-    if a <= 0 || b <= 0 || c <= 0 ||
-      a + b <= c || b + c <= a || a + c <= b
+#    if a <= 0 || b <= 0 || c <= 0 ||
+#      a + b <= c || b + c <= a || a + c <= b
       begin
         raise TriangleError
       rescue TriangleError => error
@@ -31,5 +31,6 @@ class Triangle
       "The sum of the length of any two sides of a triangle must be greater than the third."
     end
   end
-
 end
+
+Triangle.new.kind
