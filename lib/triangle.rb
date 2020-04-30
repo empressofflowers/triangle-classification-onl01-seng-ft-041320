@@ -33,4 +33,5 @@ class Triangle
   end
 end
 
-Triangle.new(4, 4, 4)
+
+Triangle.new(0, 0, 0).kind
