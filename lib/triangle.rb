@@ -23,7 +23,7 @@ class Triangle
 #      :isosceles
 #    else a != b && c =! b && a =! c
 #      :scalene
-    end
+#    end
   end
 
   class TriangleError < StandardError
