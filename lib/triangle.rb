@@ -10,7 +10,7 @@ class Triangle
   end
 
   def kind
-#The some of the length of two sides of a triangle must be greater than the third.
+#The sum of the length of two sides of a triangle must be greater than the third.
     if a <= 0 || b <= 0 || c <= 0 ||
       a + b <= c || b + c <= a || a + c <= b
         raise TriangleError
@@ -27,7 +27,9 @@ class Triangle
   end
 
   class TriangleError < StandardError
-
+    def message
+      "The sum of the length of two sides of a triangle must be greater than the third."
+    end
   end
 
 end
