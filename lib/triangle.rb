@@ -11,7 +11,7 @@ class Triangle
 
   def kind
 #The some of the length of two sides of a triangle must be greater than the third.
-    if a<= 0 || b <= 0 || c <= 0 ||
+    if a <= 0 || b <= 0 || c <= 0 ||
       a + b <= c || b + c <= a || a + c <= b
         raise TriangleError
     else a == b && b == c
