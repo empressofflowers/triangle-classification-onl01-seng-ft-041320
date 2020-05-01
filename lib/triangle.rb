@@ -17,8 +17,7 @@ class Triangle
       rescue TriangleError => error
           puts error.message
       end
-    end
-    if a == b && b == c
+    elsif a == b && b == c
       :equilateral
     elsif a == b || c == b || a == c
       :isosceles
