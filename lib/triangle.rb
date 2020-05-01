@@ -17,11 +17,12 @@ class Triangle
       rescue TriangleError => error
           puts error.message
       end
-    elsif a == b && b == c
+    end
+    if a == b && b == c
       :equilateral
     elsif a == b || c == b || a == c
       :isosceles
-    else #a != b && c != b && a != c
+    else a != b && c != b && a != c
       :scalene
     end
   end
